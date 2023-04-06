@@ -10,14 +10,14 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: "Development",
-      //   template: "./src/index.html",
-      //   inject: "body",
+      template: "./src/index.html",
+      inject: "body",
     }),
   ],
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
+    // clean: true,
   },
   module: {
     rules: [
