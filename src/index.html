@@ -7,17 +7,47 @@
     <title>Weather App</title>
 </head>
 <body>
-    <button id="unit-btn">°C / °F</button>
-    <div id="location-form">
-        <div class="fa-solid fa-location-dot"></div>
-        <input type="text" id="location-input" placeholder="Enter a Location">
-        <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
-    </siv>
-    <div id="location"></div>
-    <div id="current-condition"></div>
-    <img id="current-icon">
-    <div id="current-temp"></div>
-    <div id="current-temp-feel"></div>
+    <div class="container">
+        <div class="search-box">
+            <button id="unit-btn">°C / °F</button>
+            <div id="location-form">
+                <div class="fa-solid fa-location-dot"></div>
+                <input type="text" id="location-input" placeholder="Enter a Location">
+                <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+            </div>
+        </div>
+
+        <div class="not-found">
+            <img src="/src/404.png">
+            <p>Invalid Location!</p>
+        </div>
+
+        <div class="weather-container">
+            <div class="current-weather">
+                <p id="current-condition"></p>
+                <img id="current-icon">
+                <p id="current-temp"></p>
+            </div>
+
+            <div class="forecast-weather">
+                <div class="rain">
+                    <div class="fa-solid fa-umbrella"></div>
+                    <span></span>
+                    <p>Rain Chance</p>
+                </div>
+                <div class="humidity">
+                    <div class="fa-solid fa-water"></div>
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+                <div class="wind">
+                    <div class="fa-solid fa-wind"></div>
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://kit.fontawesome.com/45486b09f9.js" crossorigin="anonymous"></script>
 </body>
 </html>
