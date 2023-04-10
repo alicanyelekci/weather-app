@@ -8,7 +8,6 @@ body {
 
 .not-found,
 .loading {
-    display: flex;
     flex-direction: column;
     align-items: center;
     display: none;
@@ -39,7 +38,6 @@ body {
     position: absolute;
     top: 10vh;
     left: calc(50vw - 225px);
-    /* transition: 0.6s ease-out; */
 }
 
 .location-form {
@@ -86,11 +84,9 @@ body {
 }
 
 .weather-container {
-    display: flex;
     flex-direction: column;
     gap: 50px;
     display: none;
-    /* transition: 0.6s ease-out; */
 }
 
 .current-weather {
@@ -123,7 +119,7 @@ body {
 }
 
 .min-max-temp {
-    margin: 15px;
+    margin: 25px;
     text-align: center;
     font-size: 24px;
     font-weight: 800;
