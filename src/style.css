@@ -1,0 +1,166 @@
+body {
+    background-color: #075985;
+    font-family: HelveticaNeue, Helvetica, sans-serif;
+    color: #082f49;
+    padding: 0;
+    margin: 0;
+}
+
+.not-found,
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.not-found > p,
+.loading > p {
+    font-weight: 700;
+}
+
+.error404 {
+    width: 200px;
+}
+
+.load {
+    width: 100px;
+}
+
+.container {
+    width: 450px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    top: 10vh;
+    left: calc(50vw - 225px);
+    /* transition: 0.6s ease-out; */
+}
+
+.location-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#location-input {
+    border: none;
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#location-input:focus {
+    outline: none;
+    border-bottom: #075985 solid 1px;
+}
+
+.fa-location-dot {
+    color: #075985;
+    font-size: 24px;
+}
+
+#search-btn {
+    border-radius: 25px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    color: #075985;
+    font-size: 24px;
+    background-color: #e0f2fe;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+}
+
+#search-btn:active {
+    opacity: 0.7;
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    display: none;
+    /* transition: 0.6s ease-out; */
+}
+
+.current-weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#current-icon {
+    width: 100px;
+}
+
+#current-temp {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+#current-condition {
+    margin: 0;
+    font-size: 18px;
+}
+
+.forecast-weather {
+    display: flex;
+    flex-direction: column;
+    border-top: #075985 1px solid;
+}
+
+.min-max-temp {
+    margin: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.weather-properties {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.rain,
+.humidity,
+.wind {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    width: 130px;
+}
+
+.fa-water,
+.fa-umbrella,
+.fa-wind {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    font-size: 32px;
+    align-self: center;
+    justify-self: center;
+    margin-right: 10px;
+}
+
+.rain > p,
+.humidity > p,
+.wind > p {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 14px;
+    margin: 0;
+    margin-top: 3px;
+}
